@@ -1,0 +1,4 @@
+cwb-encode -d /corpora/data/spokenbnc2014/ -f "/Volumes/TOSHIBA EXT/BNC_spoken_2014/bnc2014spoken-xml/spoken/spokenbnc2014.vrt" -R /usr/local/share/cwb/registry/spokenbnc2014 -P pos -P lemma -P class -S u:0+n+exactage+age1994+agerange+gender+nat+birthplace+birthcountry+l1+lingorig+dialect_rep+hab_city+hab_country+hab_dur+dialect_l1+dialect_l2+dialect_l3+dialect_l4+edqual+occupation+socgrade+nssec+l2+fls+in_core+who+trans+whoConfidence -S pause:0+dur -S shift:0+new -S foreign:0+lang -S unclear -S trunc -S vocal:0+desc -S event:2+desc -S text:0+id
+cwb-makeall -r /usr/local/share/cwb/registry SPOKENBNC2014
+cwb-huffcode -r /usr/local/share/cwb/registry spokenbnc2014
+cwb-compress-rdx -r /usr/local/share/cwb/registry spokenbnc2014
